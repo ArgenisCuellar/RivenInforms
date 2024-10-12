@@ -22,7 +22,7 @@ def delete_audio():
 
 
 def find_music_name():
-    return (os.listdir("music")[0])
+    return os.listdir("music")[0]
 
 
 def remove_all_files(dir):
@@ -46,6 +46,3 @@ def download_vid(name):
 
 def delete_selected_file(param):
     os.remove(f"music/{param}")
-
-
-download_vid("Never gonna give you up")
